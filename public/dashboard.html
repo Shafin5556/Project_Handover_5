@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="content">
+        <p>You are now logged in.</p>
+        <div class="buttons">
+            <a href="/" class="home-button">Go back to Home</a>
+            <button id="logoutButton" class="logout-button">Log Out</button>
+        </div>
+    </div>
+
+    <script>
+        // Logout function
+        document.getElementById('logoutButton').addEventListener('click', () => {
+            // Clear user session from localStorage
+            localStorage.removeItem('userId');
+
+            // Redirect to the homepage
+            window.location.href = '/';
+        });
+    </script>
+</body>
+</html>

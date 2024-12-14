@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore the World - Tour Guide</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>ExplorA</h1>
+        <div class="auth-buttons" id="authButtons">
+
+        </div>
+        
+    </header>
+    <section class="video-section">
+        <video autoplay muted loop id="bgVideo">
+            <source src="assets/Video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="search-bar">
+            <input type="text" placeholder="Where would you like to go?" />
+            <button>Search</button>
+        </div>
+    </section>
+
+    <section class="places">
+        <div class="place" id="mountain">
+            <img src="assets/mountain.jpg" alt="Mountain Adventures">
+            <div class="place-details">
+                <h2>Mountain Adventures</h2>
+                <p>Experience the breathtaking views and thrilling hikes in the mountains.</p>
+            </div>
+        </div>
+
+        <div class="place" id="ocean">
+            <img src="assets/beach.jpg" alt="Serene Ocean">
+            <div class="place-details">
+                <h2>Serene Ocean</h2>
+                <p>Relax by the tranquil beaches and enjoy the sound of waves crashing.</p>
+            </div>
+        </div>
+
+        <div class="place" id="city">
+            <img src="assets/city.jpg" alt="City Night Escape">
+            <div class="place-details">
+                <h2>City Night Escape</h2>
+                <p>Discover the vibrant nightlife and dazzling city lights.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
